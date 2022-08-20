@@ -1,0 +1,98 @@
+<!-- <nav aria-label="breadcrumb">
+    <ol class="breadcrumb ">
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Ribbon Blog</li>
+    </ol>
+</nav> -->
+<section class="jumbotron" id="blog-banner">
+</section>
+
+
+<div class="container col-sm-7" id="page-body">
+    <section class="container">
+        <div class="container text-center">
+            <div class="row">
+                <div class="container text-center">
+                    <h1 class="headline">Ribbon Blog</h1>
+                </div>
+
+                <div class="headline">
+                    <h2>We're here in these bodies to get shit done!!</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <h3 class="col-med-6 text-center">
+        Magic is deeply concerned with the hidden connections between objects in the phenomenal world. A statue
+        becomes
+        a god, an herb becomes the erotic force of love. To work magic requires a keen sense of metaphor. <br><br>If
+        you’d like
+        to be a better witch, occultist, karcist, or spiritual worker, read more poetry. Or hell, write some verse
+        in your own hand. You're alive, after all. The Art Magical is but one art of many, and they cross fertilize.
+    </h3>
+    <br>
+
+
+
+    <!-- ****************************** -->
+    <!-- not sure if going to use these category buttons. maybe as blog grows in the far future -->
+    <!-- <div class="row row-cols-2 row-cols-lg g-2 g-lg-3 mb-4 " <% if (categories !='' ) { %>
+    <% categories.forEach(function(category, index) { %>
+        <a href="/categories/<%- category.image %>" class="col test-center category__link">
+            <div class="category__img shadow">
+                <img src="img/<%- category.image %>" alt="<%- category.name %>" Loading="lazy">
+            </div>
+            <div class="pt-1">
+                <%- category.name %>
+            </div>
+        </a>
+        <% }) %>
+            <% } %>
+</div> -->
+
+
+
+
+
+    <!-- blog post -->
+    <div class="container align-items-center">
+        <section class="pb-4 pt-4">
+            <div class="row row-cols-2 row-cols-lg-6 g-2 g-lg-3 py-4">
+                <% if(categories !='' ) { %>
+                    <% categories.forEach(function(category, index) { %>
+
+                        <a href="/categories/<%- category.name %>" class="col test-center category__link">
+                            <div class="category__img category__img--large shadow">
+                                <img src="img/<%- category.image %>" alt="<%- category.name %>" Loading="lazy">
+                            </div>
+                            <div class="pt-1">
+                                <%- category.name %>
+                            </div>
+                        </a>
+                        <% }) %>
+                            <% } %>
+
+                                <a href="/categories" class="col text-center category__link">
+                                    <div class="category__img shadow">
+                                        <img src="img/herbs.png" alt="View All Posts" loading="lazy">
+                                    </div>
+                                    <div class="pt-1">View All Posts</div>
+                                </a>
+            </div>
+    </div>
+</div>
+
+
+<!-- blog card hard code template -->
+<!-- <div class="row row-cols-2 row-cols-ls-5 g-2 g-lg-3">
+        <a href="/posts/#" class="col text-center category__link">
+            <div class="category__img category__img--large shadow">
+                <img src="https://i.imgur.com/yxPOP6S.png" alt="view all" Loading="lazy">
+            </div>
+            <div class="pt-1">Come to me, O beloved mistress…</div>
+        </a>
+    </div> -->
+
+
+<!-- ADD LATEST 1:33:37 FOR LATER??? -->
