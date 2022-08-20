@@ -80,16 +80,3 @@ exports.contact = async (req, res) => {
     res.render('contact');
 }
 
-async function insertDummyContactData() {
-    try {
-        Contact.insert([
-            {
-                "name": "Sam",
-                "emailAddress": "dummyemail@j.com",
-                "message": "test contact Message"
-            }
-        ]);
-    } catch (error) {
-        console.log('error,' + error)
-    }
-}
